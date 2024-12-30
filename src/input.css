@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .cards{
+        @apply text-center border border-slate-300 rounded-lg shadow-lg p-6 m-5 bg-gray-800 flex flex-col items-center;
+    }
+     .cards.no-border {
+        @apply border-0; /* Removes the border */
+    }
+    .subtitle{
+        @apply text-center text-2xl text-blue-700
+    }
+    .title{
+        @apply text-center text-5xl text-white mb-8
+    }
+}
